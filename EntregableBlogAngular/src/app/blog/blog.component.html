@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="" [routerLink]="['/new']">Formulario</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"> Categorias </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item btn" (click)="pintarPostPorCategoriaLocal('Vacaciones')">Viajes</a>
+          <a class="dropdown-item btn" (click)="pintarPostPorCategoriaLocal('Deporte')">Aficiones</a>
+          <a class="dropdown-item btn" (click)="pintarPostPorCategoriaLocal('Sociedad')">Cultura</a>
+        </div>
+      </li>
+    </ul>
+    <button class="btn btn-outline-danger ml-5" type="button" (click)="borrarDatos()">Limpiar post</button>
+    <button class="btn btn-outline-success ml-5" type="button" (click)="refrescarBlog()">Actualizar post</button>
+
+  </div>
+
+
+</nav>
+
+
+
+
+<div class="card link-template-tabcard" style="width:800px;margin: 20px auto;" *ngFor="let post of arrPintarPostLocal">
+  <div class="card-img-top">
+    <img style="width:100%;" [src]='post.imagen'>
+  </div>
+  <div class="card-header  d-flex justify-content-between align-items-center">
+    <h3 class="package-title"
+      style="max-width: 60%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 14px;margin-top: 10px">
+      {{post.titulo}}</h3>
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" data-target="#desc" href="#desc">Descripción</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" data-target="#info" href="#info">Información</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body p-0">
+    <div class="tab-content">
+      <div class="tab-pane p-4 active" id="desc" role="tabpanel">
+        <div id="tab-content">
+          <div id="desc">{{post.texto}}</div>
+        </div>
+      </div>
+      <div class="tab-pane" id="info" role="tabpanel">
+        <ul class="list-group list-group-flush ml-0 mb-2">
+          <li class="list-group-item d-flex justify-content-between align-items-center [hide_empty:version]">
+            Categoria
+            <span class="badge">{{post.categoria}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center [hide_empty:download_count]">
+            Titulo
+            <span class="badge">{{post.titulo}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center [hide_empty:file_size]">
+            Autor
+            <span class="badge">{{post.autor}}</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center [hide_empty:create_date]">
+            Fecha de creacion
+            <span class="badge">{{post.fecha}}</span>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+    <b></b>
+    <a [href]='post.imagen' target=_blank class="wpdm-download-link wpdm-download-locked btn btn-info "
+      data-package="30">VER FOTO</a>
+  </div>
+</div>

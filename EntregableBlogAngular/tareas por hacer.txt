@@ -1,0 +1,3 @@
+
+-Hacer que tanto en el desplegable como en el formulario las categorias sean variables 
+    en funcion de cuantas se creen, no un numero fijo como ahora que habria que mantenerlas a mano

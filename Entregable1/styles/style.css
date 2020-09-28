@@ -1,0 +1,250 @@
+#spotifyIcon {
+  width: 100px;
+  margin-top: 10px;
+}
+
+
+main {
+  margin-top: 80px;
+}
+
+
+.portada {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.texto {
+  margin-left: 15%;
+  margin-top: 100px;
+  color: white;
+}
+
+.texto h1 {
+  font-size: 5rem;
+}
+
+.texto h3 {
+  font-size: 2rem;
+}
+
+.texto p {
+  font-size: 12px;
+  margin-top: 170px;
+  margin-bottom: 30px;
+}
+
+.texto a {
+  text-decoration: underline white;
+  color: white;
+}
+
+#verPlanes {
+  border: none;
+  width: 180px;
+  background-color: rgb(81, 187, 81);
+  padding: 14px 28px;
+  color: white;
+  border-radius: 30px;
+}
+
+#verPlanes:hover {
+  width: 185px;
+  font-size: 1.1rem;
+  background-color: rgb(125, 211, 125);
+  cursor: pointer;
+}
+
+
+.ventajas {
+  background-color: white;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 250px 500px;
+  grid-template-areas:
+    ". titulo titulo ."
+    "opciones opciones opciones opciones";
+}
+
+.titulo {
+  grid-area: titulo;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 20%;
+}
+
+.opciones {
+  grid-area: opciones;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+.opciones img {
+  background-color: lightgray;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-bottom: 50px;
+}
+
+
+
+.planes {
+  background-color: rgb(235, 232, 232);
+  margin: 0px;
+}
+
+.eleccion {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eleccion h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+}
+
+.eleccion p {
+  margin-bottom: 50px;
+}
+
+
+.contentPlans {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.diferentPlans {
+  width: 300px;
+  height: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  -webkit-box-shadow: 0px 0px 59px 0px rgba(107, 106, 107, 0.44);
+  -moz-box-shadow: 0px 0px 59px 0px rgba(107, 106, 107, 0.44);
+  box-shadow: 0px 0px 59px 0px rgba(107, 106, 107, 0.44);
+}
+
+.diferentPlans ul {
+  list-style: none;
+}
+
+.diferentPlans li {
+  margin-top: 10px;
+}
+
+.mesGratis {
+  background-color: #008cba;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.empezar {
+  border: none;
+  width: 90%;
+  background-color: rgb(81, 187, 81);
+  padding: 14px 28px;
+  color: white;
+  border-radius: 30px;
+}
+
+.empezar:hover {
+  width: 95%;
+  font-size: 1.1rem;
+  background-color: rgb(125, 211, 125);
+  cursor: pointer;
+}
+
+.diferentPlans a {
+  text-decoration: underline black;
+  color: black;
+}
+
+
+footer {
+  width: auto;
+  background: black;
+  height: 80px;
+  color: grey;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about ul {
+  display: flex;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+
+footer a:hover {
+  color: white;
+}
+
+#spainIcon {
+  width: 30px;
+  margin-left: 5px;
+}
+
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(99, 155, 228);
+}
+
+
+header {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+  position: fixed;
+  top: 0;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  font-size: 18px;
+  margin-left: 30px;
+  color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover {
+  color: black;
+}

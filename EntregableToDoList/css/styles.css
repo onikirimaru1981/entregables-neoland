@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content,
+.addTarea {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.title,
+.reset {
+
+    -webkit-text-stroke: 1px black;
+
+    margin: 20px;
+    text-align: center;
+    color: rgb(184, 83, 17);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+.rellenarTarea {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 50px;
+    width: 60%;
+}
+
+.rellenarTarea input {
+    background: #23074d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    width: 40%;
+    color: rgb(187, 12, 21);
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 350px;
+
+
+}
+
+.rellenarTarea button {
+    background: #9CECFB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    -webkit-text-stroke: 0.5px black;
+
+    margin-left: 20px;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 10px;
+
+
+}
+
+.rellenarTarea button:hover {
+    background: #52c234;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #061700, #52c234);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #061700, #52c234);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+
+}
+
+
+
+
+
+.listaTareas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 60%;
+}
+
+.listaTareas button {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    margin-left: 20px;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 60px;
+
+}
+
+.listaTareas button:hover {
+    background: #00F260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    cursor: pointer;
+    font-size: 2rem;
+
+    color: rgb(207, 36, 36);
+
+}
+
+
+.listaTareas input {
+    margin-left: 10px;
+    margin-right: 30px;
+
+    width: 2em;
+    height: 2rem;
+    cursor: pointer;
+
+}
+
+.listaTareas>h3 {
+    -webkit-text-stroke: 1px black;
+
+    margin: 20px;
+    text-align: center;
+    color: rgb(28, 194, 77);
+    font-size: 4rem;
+    font-weight: bolder;
+    text-decoration: underline white;
+}
+
+
+.containerTask {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: #159957;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #155799, #159957);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    width: 80%;
+    color: rgb(41, 4, 207);
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.incompletedTasks>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.completedTasks>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+
+/* Boton reset */
+#btnReset {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    /* -webkit-text-stroke: 0.5px black; */
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 20%;
+    color: rgb(187, 9, 9);
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    height: 60px;
+
+}
+
+#btnReset:hover {
+    background: rgb(156, 0, 0);
+
+    cursor: pointer;
+    color: white;
+
+}
